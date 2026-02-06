@@ -11,7 +11,7 @@ import pkg from '../package.json' with { type: 'json' };
 import { gzipSync } from 'zlib';
 
 const env = process.env.NODE_ENV || 'mangle';
-const mangleMode = env === 'mangle';
+const mangleMode = false; //env === 'mangle';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = pathDirname(__filename);
