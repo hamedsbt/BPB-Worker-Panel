@@ -33,13 +33,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install --production
-        
-      - name: Check TypeScript version
-        run: npx tsc --version
       
       - name: Force reinstall TypeScript 5.9.3
         run: npm install typescript@5.9.3 --save-dev --force
   
+        
+      - name: Check TypeScript version
+        run: npx tsc --version
+        
       - name: Type check
         run: npm run check
         
